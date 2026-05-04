@@ -40,7 +40,7 @@ pip install requirements.txt
    ```
 
 ## Sobre
-Essa análise tem como intuito entender como a desigualdade afeta a qualidade de saúde e educação da população carente. Usamos dados do governo brasileiro e de instituições parceiras para tentar traçar causalidades entre a baixa renda com acesso à saúde e analfabetismo.
+Essa análise tem como intuito entender como a desigualdade afeta a qualidade de saúde e educação da população carente. Usamos dados do governo brasileiro e de instituições parceiras para comparar as diferenças de acesso a tratamento, taxa de mortalidade, taxa de analfabetismo, acesso a ensino superior entre a classe alta e classe baixa da sociedade brasileira.
 
 ## Aprendizado
 - Tratamento de datasets usando pandas, numpy e python
