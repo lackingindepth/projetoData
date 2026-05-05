@@ -1,48 +1,108 @@
-# projetoData
+#  Análise de Desigualdade no Brasil
 
-## Instalação 
+## Objetivo
 
-## 1 
-Com o git instalado, abra um terminal e rode:
- ```bash
-git clone https://github.com/lackingindepth/projetoData.git
-```
-## 2
-Após isso, abra a pasta do projeto no seu editor de código.
+Este projeto tem como objetivo analisar a relação entre desigualdade socioeconômica e indicadores de saúde e educação no Brasil.
+
+Através de um pipeline de ETL e Análise Exploratória de Dados (EDA), investigamos como fatores como renda estão associados a:
+
+* Taxa de analfabetismo
+* Taxa de mortalidade
+
+---
+
+## Como executar o projeto
+
+### 1. Clonar o repositório
+
 ```bash
-cd ProjetoData
+git clone https://github.com/lackingindepth/projetoData.git
+cd projetoData
 ```
-## 3
-Crie um ambiente virtual para instalar as dependencias:
+
+---
+
+### 2. Criar ambiente virtual
+
+#### Windows:
+
 ```bash
 python -m venv venv
+venv\Scripts\activate
 ```
-Verifique se fica escrito (.venv) antes do dir
 
-## 4
-Instale as bibliotecas do projeto:
+#### Linux:
+
 ```bash
-pip install requirements.txt
+python3 -m venv venv
+source venv/bin/activate
 ```
 
+---
 
-## 5
-### Os comandos para interagir com o github são:
-1. Para atualizar
-    ```bash
-   git pull
-   ```
-2. Subir para o repositório:
-   ```bash
-   git add .
-   git commit -m "(alteração feita)"
-   git push
-   ```
+### 3. Instalar dependências
 
-## Sobre
-Essa análise tem como intuito entender como a desigualdade afeta a qualidade de saúde e educação da população carente. Usamos dados do governo brasileiro e de instituições parceiras para comparar as diferenças de acesso a tratamento, taxa de mortalidade, taxa de analfabetismo, acesso a ensino superior entre a classe alta e classe baixa da sociedade brasileira.
+```bash
+pip install -r requirements.txt
+```
 
-## Aprendizado
-- Tratamento de datasets usando pandas, numpy e python
-- Analise de causalidades com grande volumes de dados.
-- Boas práticas de organização
+---
+
+### 4. Executar o ETL
+
+```bash
+python src/etl.py
+```
+
+Isso irá gerar o arquivo:
+
+```
+data/processed/dados_finais.csv
+```
+
+---
+
+### 5. Rodar a análise (Jupyter)
+
+```bash
+jupyter notebook
+```
+
+Abra o arquivo:
+
+```
+notebooks/analise_desigualdade.ipynb
+```
+
+---
+
+##  Sobre a análise
+
+O notebook responde às seguintes perguntas:
+
+1. Existe relação entre renda e analfabetismo?
+2. Existe relação entre renda e mortalidade?
+3. Educação está relacionada com saúde?
+
+---
+
+##  Tecnologias utilizadas
+
+* Python
+* Pandas
+* Seaborn
+* Matplotlib
+* Jupyter Notebook
+
+---
+
+##  Observações
+
+* Os dados utilizados são públicos (IBGE / DATASUS)
+* O projeto utiliza dados agregados por estado
+* Os resultados indicam correlação, não causalidade
+
+---
+
+
+
