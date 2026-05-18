@@ -1,6 +1,19 @@
+### Saúde 
 https://basedosdados.org/dataset/5beeec93-cbf3-43f6-9eea-9bee6a0d1683?table=dea823a5-cad7-4014-b77c-4aa33b3b0541 - Saúde (Causas evitáveis)
+
+### Educação
 https://basedosdados.org/dataset/63f1218f-c446-4835-b746-f109a338e3a1?table=23c83e1b-ba8e-4d20-b3bb-11ef7bc4ab08 - Educação Base(Ensino Médio)
 https://basedosdados.org/dataset/a3b57cca-ff80-4bf2-8bac-c145109e06a7?table=03f7e043-9ea1-47f9-9e77-f55dfe449381 - Educação Superior (Acesso)
 
-https://cidades.ibge.gov.br/brasil/pe/panorama - Renda PE
+# Renda
+https://cidades.ibge.gov.br/brasil/sintese/al?indicadores=96385,143558,143514,60045 - Alagoas
+https://cidades.ibge.gov.br/brasil/sintese/ba?indicadores=96385,143558,143514,60045 - Bahia
+https://cidades.ibge.gov.br/brasil/sintese/ce?indicadores=96385,143558,143514,60045 - Ceará
+https://cidades.ibge.gov.br/brasil/sintese/ma?indicadores=96385,143558,143514,60045 - Maranhão
+https://cidades.ibge.gov.br/brasil/sintese/pb?indicadores=96385,143558,143514,60045 - Paraíba
+https://cidades.ibge.gov.br/brasil/sintese/pe?indicadores=96385,143558,143514,60045 - Pernambuco
+https://cidades.ibge.gov.br/brasil/sintese/pi?indicadores=96385,143558,143514,60045 - Piauí
+https://cidades.ibge.gov.br/brasil/sintese/rn?indicadores=96385,143558,143514,60045 - Rio Grande do Norte
+https://cidades.ibge.gov.br/brasil/sintese/se?indicadores=96385,143558,143514,60045 - Sergipe
+
 
