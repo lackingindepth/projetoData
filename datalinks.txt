@@ -1,5 +1,5 @@
 https://basedosdados.org/dataset/5beeec93-cbf3-43f6-9eea-9bee6a0d1683?table=dea823a5-cad7-4014-b77c-4aa33b3b0541 - Saúde
-https://cidades.ibge.gov.br/brasil/pe/panorama
+https://cidades.ibge.gov.br/brasil/pe/panorama - renda PE
 https://basedosdados.org/dataset/08a1546e-251f-4546-9fe0-b1e6ab2b203d?table=cf9537b5-6198-455f-a8b0-7c762e94d79c
 https://tabnet.datasus.gov.br/cgi/tabcgi.exe?sim/cnv/evitb10br.def
 https://basedosdados.org/dataset/63f1218f-c446-4835-b746-f109a338e3a1?table=23c83e1b-ba8e-4d20-b3bb-11ef7bc4ab08 - Educação
