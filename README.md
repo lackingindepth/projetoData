@@ -2,12 +2,12 @@
 
 ## Objetivo
 
-Este projeto tem como objetivo analisar a relação entre desigualdade socioeconômica e indicadores de saúde e educação no nordeste.
+Este projeto tem como objetivo analisar a relação entre renda e indicadores de saúde e educação no nordeste.
 
 Através de um pipeline de ETL e Análise Exploratória de Dados (EDA), investigamos como fatores como renda estão associados a:
 
 * Taxa de analfabetismo
-* Taxa de mortalidade
+* Taxa de mortalidade evitável
 
 ---
 
@@ -50,38 +50,15 @@ pip install -r requirements.txt
 
 ### 4. Executar o ETL
 
-```bash
-python src/etl.py
 ```
-
-Isso irá gerar o arquivo:
-
 ```
-data/processed/dados_finais.csv
-```
-
----
-
-### 5. Rodar a análise (Jupyter)
-
-```bash
-jupyter notebook
-```
-
-Abra o arquivo:
-
-```
-notebooks/analise_desigualdade.ipynb
-```
-
----
 
 ##  Sobre a análise
 
-O notebook responde às seguintes perguntas:
+Os gráficos respondem às seguintes perguntas:
 
 1. Existe relação entre renda e analfabetismo?
-2. Existe relação entre renda e mortalidade?
+2. Existe relação entre renda e mortalidade evitável?
 3. Educação está relacionada com saúde?
 
 ---
@@ -92,14 +69,13 @@ O notebook responde às seguintes perguntas:
 * Pandas
 * Seaborn
 * Matplotlib
-* Jupyter Notebook
 
 ---
 
 ##  Observações
 
-* Os dados utilizados são públicos (IBGE / DATASUS)
-* O projeto utiliza dados agregados por estado
+* Os dados utilizados são públicos (IBGE / DATASUS / Censo)
+* O projeto utiliza dados agregados por estados e municípios 
 * Os resultados indicam correlação, não causalidade
 
 ---
