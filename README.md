@@ -1,8 +1,8 @@
-#  Análise de Desigualdade no Brasil
+#  Análise de desigualdade no nordeste
 
 ## Objetivo
 
-Este projeto tem como objetivo analisar a relação entre desigualdade socioeconômica e indicadores de saúde e educação no Brasil.
+Este projeto tem como objetivo analisar a relação entre desigualdade socioeconômica e indicadores de saúde e educação no nordeste.
 
 Através de um pipeline de ETL e Análise Exploratória de Dados (EDA), investigamos como fatores como renda estão associados a:
 
