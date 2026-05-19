@@ -1,3 +1,7 @@
+Drive com os dados brutos E processados, formatados em csv:
+https://drive.google.com/drive/folders/1svAl0GOtXiAxdHc6LB7sX3mSEKqpjd58?usp=sharing
+
+
 ### Saúde 
 https://basedosdados.org/dataset/5beeec93-cbf3-43f6-9eea-9bee6a0d1683?table=dea823a5-cad7-4014-b77c-4aa33b3b0541 - Saúde (Causas evitáveis)
 
