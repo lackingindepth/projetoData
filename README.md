@@ -88,33 +88,43 @@ pip install -r requirements.txt
 python main.py
 ```
 
-O script irá:
+## O script irá:
 
 realizar a análise dos dados processados;
+
 gerar automaticamente os gráficos;
-salvar os resultados na pasta graficos/.
-Variáveis analisadas
-Indicadores de renda
+
+salvar os resultados na pasta outputs/.
+
+## Variáveis analisadas
+
+### Indicadores de renda;
 salário médio dos trabalhadores formais;
 quantidade de empregados formais;
-taxa de alfabetização.
-Indicadores educacionais
-Educação básica
+Indicadores educacionais.
+
+### Educação básica
 taxa de evasão no ensino médio;
 taxa de repetência no ensino médio;
 taxa de promoção no ensino médio.
-Ensino superior
+
+### Ensino superior
 taxa de matrículas no ensino superior;
 taxa de concluintes no ensino superior.
-Indicadores de saúde
+
+### Indicadores de saúde
 taxa de mortalidade por causas evitáveis.
 
-As mortes evitáveis foram definidas a partir de grupos CID-10 relacionados a:
+### As mortes evitáveis foram definidas a partir de grupos CID-10 relacionados a:
 
 doenças imunopreveníveis;
+
 doenças infecciosas;
+
 doenças crônicas não transmissíveis;
+
 causas maternas;
+
 causas externas.
 
 # Perguntas da análise
@@ -122,9 +132,13 @@ causas externas.
 ## Os gráficos produzidos pelo projeto buscam responder às seguintes perguntas:
 
 Existe relação entre renda média e evasão escolar?
+
 Existe relação entre renda média e mortalidade evitável?
+
 Existe relação entre renda média e acesso ao ensino superior?
+
 Existe relação entre renda média e conclusão no ensino superior?
+
 Existe relação entre acesso ao ensino superior e mortalidade evitável?
 
 # Metodologia
@@ -133,9 +147,13 @@ Existe relação entre acesso ao ensino superior e mortalidade evitável?
 
 ### 1. ETL
 limpeza dos datasets;
+
 padronização das colunas;
+
 tratamento de valores ausentes;
+
 filtragem para o ano de 2022;
+
 integração dos datasets.
 
 ### 2. Normalização dos indicadores
