@@ -1,84 +1,142 @@
-#  Análise de desigualdade no nordeste
+# Análise de Desigualdade Social no Nordeste Brasileiro
 
 ## Objetivo
 
-Este projeto tem como objetivo analisar a relação entre renda e indicadores de saúde e educação no nordeste.
+Este projeto tem como objetivo analisar relações entre indicadores de renda, educação e saúde nos estados do Nordeste brasileiro no ano de 2022.
 
-Através de um pipeline de ETL e Análise Exploratória de Dados (EDA), investigamos como fatores como renda estão associados a:
+Através de ETL e de uma Análise Exploratória de Dados, investigamos como fatores socioeconômicos estão associados a indicadores educacionais e de mortalidade evitável.
 
-* Taxa de analfabetismo
-* Taxa de mortalidade evitável
+As análises buscam identificar possíveis associações entre:
+
+- renda média da população;
+- acesso ao ensino superior;
+- evasão escolar;
+- taxa de escolarização;
+- mortalidade por causas evitáveis.
 
 ---
 
-## Como executar o projeto
+# Bases de dados utilizadas
 
-### 1. Clonar o repositório
+Os dados utilizados são públicos e provenientes de:
 
-```bash
+- IBGE
+- Base dos Dados
+- DATASUS
+- Censo Demográfico
+
+Os datasets utilizados contemplam:
+
+- renda média e emprego formal;
+- taxa de escolarização;
+- indicadores da educação básica;
+- indicadores do ensino superior;
+- mortalidade por causas evitáveis classificadas segundo CID-10.
+
+---
+
+# Estrutura do projeto
+
+```text
+projetoData/
+│
+├── datasets/
+│   ├── dadosBrutos/
+│   └── dadosProcessados/
+│
+├── graficos/
+│
+├── src/
+│   ├── limpeza_renda.py
+│   ├── limpeza_educacao_basica.py
+│   ├── limpeza_educacao_superior.py
+│   ├── limpeza_saude.py
+│   ├── merge_datasets.py
+│   └── analise.py
+│
+├── main.py
+├── requirements.txt
+└── README.md
+
+```
+# Como executar o projeto
+
+1. Clonar o repositório
+```
 git clone https://github.com/lackingindepth/projetoData.git
 cd projetoData
 ```
 
----
-
-### 2. Criar ambiente virtual
-
-#### Windows:
-
-```bash
+2. Criar ambiente virtual
+```
+Windows
 python -m venv venv
 venv\Scripts\activate
 ```
-
-#### Linux:
-
-```bash
+```
+Linux
 python3 -m venv venv
 source venv/bin/activate
 ```
-
----
-
-### 3. Instalar dependências
-
-```bash
+4. Instalar dependências
+```
 pip install -r requirements.txt
 ```
 
----
-
-### 4. Executar o ETL
-
+6. Executar o projeto
 ```
+python main.py
 ```
 
-##  Sobre a análise
+O script irá:
 
-Os gráficos respondem às seguintes perguntas:
+realizar a análise dos dados processados;
+gerar automaticamente os gráficos;
+salvar os resultados na pasta graficos/.
+Variáveis analisadas
+Indicadores de renda
+salário médio dos trabalhadores formais;
+quantidade de empregados formais;
+taxa de alfabetização.
+Indicadores educacionais
+Educação básica
+taxa de evasão no ensino médio;
+taxa de repetência no ensino médio;
+taxa de promoção no ensino médio.
+Ensino superior
+taxa de matrículas no ensino superior;
+taxa de concluintes no ensino superior.
+Indicadores de saúde
+taxa de mortalidade por causas evitáveis.
 
-1. Existe relação entre renda e analfabetismo?
-2. Existe relação entre renda e mortalidade evitável?
-3. Educação está relacionada com saúde?
+As mortes evitáveis foram definidas a partir de grupos CID-10 relacionados a:
 
----
+doenças imunopreveníveis;
+doenças infecciosas;
+doenças crônicas não transmissíveis;
+causas maternas;
+causas externas.
 
-##  Tecnologias utilizadas
+# Perguntas da análise
 
-* Python
-* Pandas
-* Seaborn
-* Matplotlib
+## Os gráficos produzidos pelo projeto buscam responder às seguintes perguntas:
 
----
+Existe relação entre renda média e evasão escolar?
+Existe relação entre renda média e mortalidade evitável?
+Existe relação entre renda média e acesso ao ensino superior?
+Existe relação entre renda média e conclusão no ensino superior?
+Existe relação entre acesso ao ensino superior e mortalidade evitável?
 
-##  Observações
-
-* Os dados utilizados são públicos (IBGE / DATASUS / Censo)
-* O projeto utiliza dados agregados por estados e municípios 
-* Os resultados indicam correlação, não causalidade
-
----
+## Tecnologias utilizadas
+Python
+Pandas
+Matplotlib
+Seaborn
 
 
+## Observações
+Os dados utilizados são públicos.
+O projeto utiliza dados agregados por estado.
+Os resultados representam associações estatísticas e não relações de causalidade.
+O projeto possui caráter educacional.
 
