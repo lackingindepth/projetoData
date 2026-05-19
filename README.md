@@ -127,6 +127,25 @@ Existe relação entre renda média e acesso ao ensino superior?
 Existe relação entre renda média e conclusão no ensino superior?
 Existe relação entre acesso ao ensino superior e mortalidade evitável?
 
+# Metodologia
+
+## O projeto foi desenvolvido em três etapas principais:
+
+### 1. ETL
+limpeza dos datasets;
+padronização das colunas;
+tratamento de valores ausentes;
+filtragem para o ano de 2022;
+integração dos datasets.
+
+### 2. Normalização dos indicadores
+
+Variáveis absolutas foram normalizadas pela população estadual para evitar distorções causadas por diferenças populacionais entre os estados.
+
+### 3. Análise exploratória
+
+Foram utilizados gráficos de dispersão, linhas de regressão e matrizes de correlação para identificar tendências e associações entre os indicadores.
+
 ## Tecnologias utilizadas
 Python
 Pandas
