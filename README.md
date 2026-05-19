@@ -96,23 +96,23 @@ gerar automaticamente os gráficos;
 
 salvar os resultados na pasta outputs/.
 
-## Variáveis analisadas
+# Variáveis analisadas
 
-### Indicadores de renda;
+## Indicadores de renda;
 salário médio dos trabalhadores formais;
 quantidade de empregados formais;
 Indicadores educacionais.
 
-### Educação básica
+## Educação básica
 taxa de evasão no ensino médio;
 taxa de repetência no ensino médio;
 taxa de promoção no ensino médio.
 
-### Ensino superior
+## Ensino superior
 taxa de matrículas no ensino superior;
 taxa de concluintes no ensino superior.
 
-### Indicadores de saúde
+## Indicadores de saúde
 taxa de mortalidade por causas evitáveis.
 
 ### As mortes evitáveis foram definidas a partir de grupos CID-10 relacionados a:
@@ -127,9 +127,8 @@ causas maternas;
 
 causas externas.
 
-# Perguntas da análise
 
-## Os gráficos produzidos pelo projeto buscam responder às seguintes perguntas:
+# Os gráficos produzidos pelo projeto buscam responder às seguintes perguntas:
 
 Existe relação entre renda média e evasão escolar?
 
