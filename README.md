@@ -138,7 +138,7 @@ Existe relação entre renda média e acesso ao ensino superior?
 
 Existe relação entre renda média e conclusão no ensino superior?
 
-Existe relação entre acesso ao ensino superior e mortalidade evitável?
+Existe relação entre a escolarização fundamental e acesso ao ensino superior?
 
 # Metodologia
 
