@@ -19,4 +19,4 @@ renda_conclusao_superior(df)
 escolarizacao_acesso_superior(df)
 heatmap_geral(df)
 
-print("Gráficos gerados com sucesso!")
+print("FOOOOOI xDDDD")
