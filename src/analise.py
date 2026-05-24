@@ -212,3 +212,26 @@ def heatmap_geral(df):
 
     plt.show()
 
+# Gera bar chart blocks da população total por estado
+def populacao_total_bar_chart(df):
+    
+    plt.figure(figsize=(10,8))
+
+    sns.barplot(
+        data=df,
+        x="sigla_uf",
+        y="População no último censo"
+    )
+
+    plt.title("População Total por Estado")
+
+    plt.xlabel("Estado")
+    plt.ylabel("População Total")
+
+    #Salvar gráfico
+    plt.savefig(
+        "outputs/populacao_total_bar_chart.png",
+        bbox_inches="tight"
+    )
+
+    plt.show()

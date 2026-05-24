@@ -12,11 +12,12 @@ df = pd.read_csv(
 )
 
 # Chamar funções
-renda_evasao(df)
-renda_mortalidade(df)
-renda_acesso_superior(df)
-renda_conclusao_superior(df)
-escolarizacao_acesso_superior(df)
-heatmap_geral(df)
+#renda_evasao(df)
+#renda_mortalidade(df)
+#renda_acesso_superior(df)
+#renda_conclusao_superior(df)
+#escolarizacao_acesso_superior(df)
+#heatmap_geral(df)
+populacao_total_bar_chart(df)
 
 print("FOOOOOI xDDDD")

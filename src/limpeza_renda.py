@@ -61,24 +61,35 @@ renda["Taxa de escolarização de 6 a 14 anos de idade"] = (
 # Convertendo a coluna de taxa de escolarização de 6 a 14 anos de idade para numérica, tratando erros como NaN
 renda["Taxa de escolarização de 6 a 14 anos de idade"] = pd.to_numeric(renda["Taxa de escolarização de 6 a 14 anos de idade"], errors="coerce")
 
+# Limpeza dos dados de população total
+renda["População no último censo"] = (
+    renda["População no último censo"]
+    .str.replace(".", "").str.replace(" pessoas", "")
+)
+
+# Convertendo a coluna de população total para numérica, tratando erros como NaN
+renda["População no último censo"] = pd.to_numeric(renda["População no último censo"], errors="coerce")
+
+
+
 # Dataframe com a média de salário, pessoas ocupadas por state e taxa de escolarização de 6 a 14 anos de idade por state
 renda_estado = (
     renda.groupby("sigla_uf")
     .agg({ #.agg permite aplicar várias funções de agregação em diferentes colunas
         "Salário médio mensal dos trabalhadores formais ": "mean",
         "Pessoal ocupado em postos de trabalho formais": "sum",
-        "Taxa de escolarização de 6 a 14 anos de idade": "mean"
+        "Taxa de escolarização de 6 a 14 anos de idade": "mean",
+        "População no último censo": "sum"
     })
     .reset_index()
 )
 
-print(renda_estado["Salário médio mensal dos trabalhadores formais "]) #test
+print(renda_estado["População no último censo"]) #test
 
 # Salvando os dados limpos
 renda_estado.to_csv("datasets/dadosProcessados/renda_estado.csv", index=False)
 
 #print(renda_estado.head())
-
 
 
 
